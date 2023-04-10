@@ -2,18 +2,9 @@
  margin: 0;
  padding: 0;  
 }
-html {
-    overflow: hidden;
-}
 
 body {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    max-height: 100vh;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
 }
 
 /* Side Navigation */
@@ -96,10 +87,32 @@ body::-webkit-scrollbar {
 
 
 /* Content */
-    .section {
-        scroll-snap-align: start;
-        max-width: 90%;
-        height: 100vh;
-        margin-left: 20vh;
-        padding: 4rem;
+
+    .content-container {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        max-height: 100vh;
     }
+    .content-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Section */
+        .section {
+            scroll-snap-align: start;
+            height: 100vh;
+            margin:  0 0 0 10rem;
+            padding: 4rem 1rem 0 4rem;
+            box-sizing: border-box;
+        }
+
+        /* .section.sec-about {
+            background-color: saddlebrown;
+        } 
+        .section.sec-portfolio {
+            background-color: blueviolet;
+        }
+        .section.sec-gallery {
+            background-color: aqua;
+        }  */
