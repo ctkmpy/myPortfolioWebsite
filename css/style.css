@@ -1,0 +1,105 @@
+* {
+ margin: 0;
+ padding: 0;  
+}
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Side Navigation */
+    .side-nav {
+        background: #222;
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+    }
+    .side-nav span {
+        z-index: 2;
+        cursor: pointer;
+    }
+    /* Side Nav Icons */
+        .side-nav span {
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+        .side-nav .about.selected {
+            transform: translateX(1.7rem);
+        }
+        .side-nav .portfolio.selected {
+            transform: translateX(1.7rem);
+        }
+        .side-nav .gallery.selected {
+            transform: translateX(1.7rem);
+        }
+
+        .side-nav span img {
+            width: 3rem;
+            filter: invert();
+        }
+
+    /* Nav Selector */
+        .side-nav .selector {
+            transition: 2s;
+            transition-timing-function: cubic-bezier(.25, .1.5, .25, 1.5);
+        }
+        .side-nav .selector.about-selected {
+            background-image: url("../img/selector.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            z-index: 1;
+            width: 8rem;
+            height: 16rem;
+            position: absolute;
+            transform: translateX(.55rem) translateY(-34vh);
+
+        }
+        .side-nav .selector.portfolio-selected {
+            background-image: url("../img/selector.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            z-index: 1;
+            width: 8rem;
+            height: 16rem;
+            position: absolute;
+            transform: translateX(.55rem) translateY(-.5vh);
+        }
+        .side-nav .selector.gallery-selected {
+            background-image: url("../img/selector.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            z-index: 1;
+            width: 8rem;
+            height: 16rem;
+            position: absolute;
+            transform: translateX(.55rem) translateY(33vh);
+        }
+
+
+/* Content */
+    .section {
+        scroll-snap-align: start;
+        max-width: 90%;
+        height: 100vh;
+        margin-left: 20vh;
+        padding: 4rem;
+    }
