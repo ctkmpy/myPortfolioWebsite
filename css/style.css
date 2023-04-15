@@ -5,6 +5,7 @@
 
 body {
     overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Side Navigation */
@@ -107,12 +108,41 @@ body {
             box-sizing: border-box;
         }
 
-        /* .section.sec-about {
-            background-color: saddlebrown;
-        } 
-        .section.sec-portfolio {
-            background-color: blueviolet;
-        }
-        .section.sec-gallery {
-            background-color: aqua;
-        }  */
+        
+        /* About Section */
+            .sosmed-items {
+                display: flex;
+                margin-top: 1rem;
+                width: 5rem;
+                justify-content: space-between;
+            }
+            .sosmed-items .instagram-icon {
+                background-image: url('../img/instagram.png');
+                background-size: cover;
+                height: 2rem;
+                width: 2rem;
+                cursor: pointer;
+            }
+            .sosmed-items .github-icon {
+                background-image: url('../img/github-logo.png');
+                background-size: cover;
+                height: 2rem;
+                width: 2rem;
+                cursor: pointer;
+            }
+
+            .contact-btn {
+                margin-top: 1rem;
+                color: #222;
+                padding: 1rem;
+                width: fit-content;
+                border: 2px solid #222;
+                border-radius: 8px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: .5s;
+            }
+            .contact-btn:hover {
+                background-color: #222;
+                color: #fff;
+            }
