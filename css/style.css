@@ -123,7 +123,7 @@ body {
                 width: 2rem;
                 cursor: pointer;
             }
-            .sosmed-items .github-icon {
+            .sosmed-items a.github-icon {
                 background-image: url('../img/github-logo.png');
                 background-size: cover;
                 height: 2rem;
@@ -134,9 +134,9 @@ body {
             .contact-btn {
                 margin-top: 1rem;
                 color: #222;
-                padding: 1rem;
+                padding: .5rem;
                 width: fit-content;
-                border: 2px solid #222;
+                border: 3px solid #222;
                 border-radius: 8px;
                 font-weight: bold;
                 cursor: pointer;
@@ -150,12 +150,13 @@ body {
             /* Overlay Contact */
                 .contact-overlay {
                     display: none;
-                    background: #222;
+                    background-color: #222;
                     position: fixed;
                     top: 0;
                     bottom: 0;
                     left: 0;
                     right: 0;
+                    transition: 1s;
                 }
                 .contact-overlay.open-contact-overlay {
                     display: block;
