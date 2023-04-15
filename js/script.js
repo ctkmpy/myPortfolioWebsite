@@ -10,6 +10,9 @@ const secAbout = document.querySelector('.sec-about');
 const secPortfolio = document.querySelector('.sec-portfolio');
 const secGallery = document.querySelector('.sec-gallery');
 
+const contactBtn = document.querySelector('.contact-btn');
+const contactOverlay = document.querySelector('.contact-overlay');
+const contactCloseBtn = document.querySelector('.contact-overlay-close-btn')
 
 // (Side Nav Click) to Selector Transition
     
@@ -87,4 +90,15 @@ const secGallery = document.querySelector('.sec-gallery');
             selector.classList.remove('portfolio-selected');
             selector.classList.add('gallery-selected');
         }
+    });
+
+
+    // Contact Overlay
+
+    contactBtn.addEventListener('click', function() {
+        contactOverlay.classList.add('open-contact-overlay');
+    });
+
+    contactCloseBtn.addEventListener('click', function() {
+        contactOverlay.classList.remove('open-contact-overlay');
     });
