@@ -19,6 +19,8 @@ const closeWindow = document.querySelector('.close-window');
 const sizingWindow = document.querySelector('.sizing-window');
 const restoreWindow = document.querySelector('.restore-window');
 const portfolioWindow = document.querySelector('#portfolio-window');
+const portfolioWindowClass = document.querySelector('.portfolio-window');
+
 
 
 // (Side Nav Click) to Selector Transition
@@ -169,4 +171,13 @@ const portfolioWindow = document.querySelector('#portfolio-window');
         
         closeWindow.addEventListener('click', () => {
             portfolioWindow.style.transform = 'scale(0)';
+            portfolioWindowClass.classList.remove('maximazed');
+            portfolioWindowClass.style.top = '30vh';
+            portfolioWindowClass.style.left = '30vw';
+        });
+
+        sizingWindow.addEventListener('click', () => {
+            portfolioWindowClass.classList.toggle('maximazed');
+            portfolioWindowClass.style.top = '0';
+            portfolioWindowClass.style.left = '0';
         });

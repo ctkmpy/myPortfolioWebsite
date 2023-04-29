@@ -282,19 +282,27 @@ body::-webkit-scrollbar {
                         }
                 /* Portfolio Explorer Button */
                     .portfolio-explorer {
-                        margin-top: 4rem;
+                        margin-top: 5rem;
                     }
                     .portfolio-explorer-btn {
                         background-image: url(../img/file-management.png);
                         background-size: cover;
                         display: block;
+                        margin: .5rem 1rem 0;
                         height: 4rem;
                         width: 4rem;
                         cursor: pointer;
                     }
+                    .portfolio-explorer p {
+                        margin-left: 1.2rem;
+                    }
 
                 /* Window Portfolio */
                     #portfolio-window {
+                        transform: scale(0);
+                        transition: transform .5s, height .5s, width .5s;
+                    }
+                    .portfolio-window {
                         display: flex;
                         flex-direction: column;
                         height: 40vw;
@@ -306,8 +314,19 @@ body::-webkit-scrollbar {
                         position: absolute;
                         top: 30vh;
                         left: 30vw;
-                        transform: scale(0);
-                        transition: transform .5s;
+                        border-radius: 8px;
+                        overflow: hidden;
+                    }
+
+                    .portfolio-window.maximazed {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100vh;
+                        width: 100vw;
+                        max-height: none;
+                        max-width: none;
+                        transition: transform .5s, height .5s, width .5s;
                     }
 
                     #portfolio-window-header {
@@ -318,7 +337,89 @@ body::-webkit-scrollbar {
                         justify-content: end;
                         align-items: center;
                         cursor: grabbing;
-                    }
+                    }   
+
+                        /* Window Category Section */
+                            .window-category-item {
+                                overflow-x: scroll;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .window-category-item h5 a {
+                                padding: .3rem 0 .3rem 1rem;
+                                display: block;
+                                margin-top: .5rem;
+                                width: 100%;
+                                color: #fff;
+                                font-size: calc(.6rem + 1vw);
+                                cursor: pointer;
+                                text-decoration: none;
+                            }
+                            .window-category-item h5 a:hover {
+                                background-color: #555;
+                            }
+                            .window-category-item .list-category-main {
+                                display: flex;
+                                padding: 1rem;
+                                padding-bottom: 0;
+                            }
+                            .window-category-item span {
+                                margin: -.3rem .5rem 0 -.5rem;
+                                transform: rotate(90deg);
+                                transform-origin: center;
+                                color: #aaa;
+                                float: left;
+                                font-size: calc(.6rem + 1vw);
+                                cursor: pointer;
+                            }
+                            .window-category-item h6 {
+                                margin: 0 .3rem .3rem;
+                                width: 100%;
+                                color: #fff;
+                                font-size: calc(.6rem + 1vw);
+                                float: right;
+                                cursor: pointer;
+                            }
+                            .window-category-item .list-category-item {
+                                transform: scale(1);
+                            }
+                            .window-category-item .list-category-item p a {
+                                text-decoration: none;
+                                padding: .1rem 0 .1rem 2.5rem;
+                                margin: .2rem 0;
+                                color: #fff;
+                                width: 100%;
+                                font-size: calc(.5rem + 1vw);
+                                cursor: pointer;
+                                display: block;
+                            }
+
+                            .window-category-item .list-category-item p:nth-child(1):hover {
+                                background-color: #555;
+                                width: 100%;
+                            }
+                            .window-category-item .list-category-item p:nth-child(2):hover {
+                                background-color: #555;
+                                width: 100%;
+                            }
+                            .window-category-item .list-category-item p:nth-child(3):hover {
+                                background-color: #555;
+                                width: 100%;
+                            }
+
+                            .window-category-item .list-category-item p:nth-child(1):target {
+                                background-color: #666;
+                                width: 100%;
+                            }
+                            .window-category-item .list-category-item p:nth-child(2):target {
+                                background-color: #666;
+                                width: 100%;
+                            }
+                            .window-category-item .list-category-item p:nth-child(3):target {
+                                background-color: #666;
+                                width: 100%;
+                            }
+
                         /* Window Buttons */
                             #portfolio-window-header span {
                                 height: 1rem;
@@ -356,3 +457,4 @@ body::-webkit-scrollbar {
                                 width: 70%;
                                 background-color: #666;
                             }
+                    
