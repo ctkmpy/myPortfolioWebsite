@@ -72,6 +72,26 @@ const portfolioWindowClass = document.querySelector('.portfolio-window');
         });
     });
 
+    // For Responsive 600px
+        aboutBtn.addEventListener('click', function() {
+            contentCont.scrollLeft({
+                left: secAbout.offsetLeft,
+                behavior: 'smooth'
+            });
+        });
+        portfolioBtn.addEventListener('click', function() {
+            contentCont.scrollLeft({
+                left: secPortfolio.offsetLeft,
+                behavior: 'smooth'
+            });
+        });
+        galleryBtn.addEventListener('click', function() {
+            contentCont.scrollLeft({
+                left: secGallery.offsetLeft,
+                behavior: 'smooth'
+            });
+        });
+
 // (Content Scroll) to Selector Transtition
 
     contentCont.addEventListener('scroll', function() {
@@ -174,6 +194,10 @@ const portfolioWindowClass = document.querySelector('.portfolio-window');
             portfolioWindowClass.classList.remove('maximazed');
             portfolioWindowClass.style.top = '30vh';
             portfolioWindowClass.style.left = '30vw';
+            if (window.innerWidth < 600) {
+                portfolioWindowClass.style.top = '0';
+                portfolioWindowClass.style.left = '0';
+            }
         });
 
         sizingWindow.addEventListener('click', () => {
