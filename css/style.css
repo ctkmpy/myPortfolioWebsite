@@ -1,6 +1,7 @@
 * {
  margin: 0;
- padding: 0;  
+ padding: 0; 
+ text-decoration: none;
 }
 
 html {
@@ -426,7 +427,7 @@ body::-webkit-scrollbar {
                         /* Window Item Section */
                             .window-item {
                                 display: flex;
-
+                                padding: 1rem;
                             }
                             .window-item .portfolio-item-container {
                                 display: flex;
@@ -439,6 +440,7 @@ body::-webkit-scrollbar {
                             }
                             .window-item .portfolio-item-container .portfolio-thumbnail {
                                 max-width: 90px;
+                                min-height: 60px;
                                 width: 100%;
                                 height: 100%;
                                 background-color: #fff;
@@ -635,4 +637,16 @@ body::-webkit-scrollbar {
             z-index: 9999;
         }
 
+    }
+
+    /* Update Thubnail */
+    .mind-reader-thumb {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('../img/mind-reader-thumb.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 99;
     }
