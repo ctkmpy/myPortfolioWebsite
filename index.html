@@ -1,106 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ctkmpy Portfolio</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Side Navigation -->
-            <div class="side-nav">
-                 <span class="about selected"><img src="img/profile-icon.png" alt="about"></span>
-                 <span class="portfolio"><img src="img/website-icon.png" alt="portfolio"></span>
-                 <span class="gallery"><img src="img/cube-icon.png" alt="gallery"></span>
-                 <span class="selector about-selected"></span>
-            </div>
-        <!-- Content -->
-            <div class="section sec-about">
-                <h1>Hi, My Name is Ahmad Saifudin Syuhri</h1>
-                <p>I'm a Front-End Web Developer and 3D Art Enthusiast. I like fantasy things, like a movie, game, or whatever about fantasy world.</p>
-                <div class="sosmed-items">
-                    <a href="https://github.com/ctkmpy" target="_blank" class="github-icon"></a>
-                    <a href="https://www.instagram.com/ctkmpy" target="_blank" class="instagram-icon"></a>
-                </div>
-                <div class="contact-btn">Say hello, to me!</div>
-                <div class="contact-overlay">
-                    <div class="contact-container">
-                        <label for="text">Name</label>
-                        <input type="text"></input>
-                        <label for="email">Email</label>
-                        <input type="email"></input>
-                        <label for="textarea">Write whatever you wanna say to me</label>
-                        <textarea name="" id="" cols="10" rows="8"></textarea>
-                        <input type="button" value="Send!"></input>
-                        <span class="contact-overlay-close-btn"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="section sec-portfolio">
-                <h1>My Portfolio</h1>
-                <p>My recents work about Web Development.</p>
-                
-                <div class="portfolio-recent-container">
-                    <div class="portfolio-recent-card">
-                        <div class="main-card">
-                            <span class="mind-reader-thumb"><a href="ctkmpy.github.io/mind-reader"></a></span>
-                        </div>
-                        <div class="second-card">
-                            <span>HTML, CSS, JS</span>
-                            <span>Mind Reader Game</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-explorer">
-                    <h2>Open Portfolio Explorer for more!</h2>
-                    <span class="portfolio-explorer-btn"></span>
-                    <p>Portfolio<br>Explorer</p>
-                    
-                </div>
-                <!-- Portfolio Window -->
-                    <div id="portfolio-window" class="portfolio-window">
-                        <div id="portfolio-window-header">
-                            <span class="restore-window"></span>
-                            <span class="sizing-window"></span>
-                            <span class="close-window"></span>
-                        </div>
-                        <div class="window-item-container">
-                            <div class="window-category-item">
-                                <div class="list-category-main">
-                                    <span>></span>
-                                    <h6>Category</h6>
-                                </div>
-                                <div class="list-category-item">
-                                    <p id="html-category"><a href="#html-category">HTML</a></p>
-                                    <p id="css-category"><a href="#css-category">CSS</a></p>
-                                    <p id="js-category"><a href="#js-category">JS</a></p>
-                                </div>
-                                <h5><a href="#">Show All</a></h5>
-                            </div>
-                            <div class="window-item">
-                                
-                                <a href="ctkmpy.github.io/mind-reader">
-                                    <div class="portfolio-item-container">
-                                        <div class="portfolio-thumbnail">
-                                            <span class="mind-reader-thumb"></span>
-                                        </div>
-                                        <span class="portfolio-name">Mind Reader Game</span>
-                                     </div>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="section sec-gallery">
-                <h1>3D Gallery</h1>
-                <p>My 3D Rendered Collections</p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div class="opening">
+        <ul>
+            <li>Hi.</li>
+            <li>Welcome!</li>
+            <li>to My Portfolio Website</li>
+        </ul>
+    </div> -->
+    <nav>
+        <div class="scroll-line"></div>
+        <div class="scroll-icon bio nav-selected"></div>
+        <div class="scroll-icon pf-web"></div>
+        <div class="scroll-icon pf-3d"></div>
+    </nav>
+    <div class="sec-title">BIO</div>
+    <section id="bio">
+        <div class="box"></div>
+    </section>
+    <section id="pf-web">
+        <div class="box"></div>
+    </section>
+    <section id="pf-3d">
+        <div class="box"></div>
+    </section>
 
 
-        <!-- Scripts -->
-        <script src="js/script.js"></script>
-    </body>
+<!-- Script -->
+<script src="js/script.js"></script>
+</body>
 </html>
