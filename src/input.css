@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  .current-section {
+    transition: 1s;
+    background-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,1);
+  }
+
+  .grid-template-content {
+    display: grid;
+    grid-template-columns: 32em 1fr;
+  }
+  .grid-template-profile {
+    display: grid;
+    grid-template-columns: 9em 1fr;
+  }
+  .grid-template-contacts {
+    display: grid;
+    grid-template-columns: 2.5em 1fr;
+  }
+  
+  #gradient-container-rgb {
+    animation: gradientAnimateRGB 30s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite alternate;
+  }
+  
+  #gradient-container-gray {
+    animation: gradientAnimateGray 30s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite alternate;
+  }
+  
+  @keyframes gradientAnimateRGB {
+    0% {
+      rotate: 0deg;
+      top: 10%;
+      left: 10%;
+    }
+  
+    100% {
+      rotate: 360deg;
+      top: 90%;
+      left: 90%;
+    }
+  }
+  
+  @keyframes gradientAnimateGray {
+    0% {
+      rotate: 0deg;
+      top: 0%;
+      right: 10%;
+    }
+  
+    100% {
+      rotate: 360deg;
+      top: 10%;
+      right: 100%;
+    }
+  }
+
+  #main-content-container::-webkit-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+}

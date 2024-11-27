@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="w-screen h-screen bg-black">
+
+    <!-- Background Begin -->
+
+    <div id="bg-main" class="overflow-hidden w-full h-full blur-[10em]">
+        <div id="gradient-container-rgb" class="absolute w-fit h-fit p-[6em] scale-[3]">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-red-800 rounded-bl-[66%] rounded-br-[48%] rounded-tr-[84%] rounded-tl-[34%] -skew-x-6 -skew-y-6"></div>
+            <div class="absolute bottom-0-0 right-0-0 w-64 h-64 bg-blue-800 rounded-bl-[64%] rounded-br-[38%] rounded-tr-[86%] rounded-tl-[24%] -skew-x-12 -skew-y-12"></div>
+        </div>
+        <div id="gradient-container-gray" class="absolute w-fit h-fit p-[6em] scale-[3]">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-green-800 rounded-bl-[66%] rounded-br-[48%] rounded-tr-[84%] rounded-tl-[34%] -skew-x-6 -skew-y-6"></div>
+            <div class="absolute bottom-0-0 right-0-0 w-64 h-64 bg-gray-800 rounded-bl-[64%] rounded-br-[38%] rounded-tr-[86%] rounded-tl-[24%] -skew-x-12 -skew-y-12"></div>
+        </div>
+    </div>
+
+    <!-- Background Break -->
+
+
+    <!-- Content Begin -->
+
+    <div id="content" class="absolute w-full h-full top-0 left-0 grid-template-content">
+
+        <!-- Aside -->
+        <div class="text-white bg-[rgba(0,0,0,0.6)] relative p-5 rounded-3xl">
+
+            <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl h-full w-full relative">
+
+                <!-- Pict, Name, and Roles -->
+                <div class="w-full h-fit p-5 gap-x-6 grid-template-profile">
+                    <!-- My Pict -->
+                    <div class="bg-[rgba(255,255,255,0.1)] shadow-2xl w-36 h-36 rounded-[50%] overflow-hidden">
+                        <img class="-translate-y-8" src="img/me.png" alt="profile-image">
+                    </div>
+
+                    <!-- My Name & Contacts -->
+                    <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 flex flex-col gap-2">
+                        <!-- Name -->
+                        <h1 class="font-bold text-xl">Ahmad Saifudin Syuhri</h1>
+                        <!-- Roles -->
+                        <p class="text-[rgba(255,255,255,0.6)]">Material Handler, Software 
+                            Developer, Network Engineer</p>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 m-5">
+                    <!-- Roles -->
+                    <p class="text-[rgba(255,255,255,0.8)]">Pengalaman selama 3 tahun di bidang manufaktur otomotif, yang berfokus pada material handling. Saya 
+                        berkontribusi pada ketersediaan raw material yang akan diproses. Perhatian terhadap manajemen waktu 
+                        dan detail menjadi kunci dalam mencapai pengiriman material yang tepat waktu dan akurat.</p>
+                </div>
+
+                <!-- My Contacts -->
+                <div class="bg-[rgba(255,255,255,0.1)] w-100 h-fit m-5 p-5 rounded-3xl grid gap-4">
+                    <!-- Email -->
+                    <div class="grid-template-contacts w-full h-fit gap-6">
+                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                            <img class="invert w-6" src="img/email.png" alt="">
+                        </h1>
+                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">ahmadsaepudin032@gmail.com</p>
+                    </div>
+                    <!-- Phone -->
+                    <div class="grid-template-contacts w-full h-fit gap-6">
+                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                            <img class="invert w-6" src="img/smartphone-call.png" alt="">
+                        </h1>
+                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">0851-5636-9119</p>
+                    </div>
+                    <!-- Location -->
+                    <div class="grid-template-contacts w-full h-fit gap-6">
+                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                            <img class="invert w-6" src="img/location-pin.png" alt="">
+                        </h1>
+                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">Bekasi, Indonesia</p>
+                    </div>
+                </div>
+
+
+                <!-- Float Socmed -->
+                <div class="w-full h-fit absolute bottom-8 flex justify-center">
+                    <div class="bg-[rgba(255,255,255,0.1)] w-fit p-3 rounded-3xl flex gap-4">
+                        <!-- Github -->
+                        <a href="#" class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-[50%]">
+                            <img class="invert w-6" src="img/github.png" alt="">
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-[50%]">
+                            <img class="invert w-6" src="img/social-media.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="text-white p-5 overflow-hidden w-full h-full">
+            <div id="main-content-container" class="overflow-scroll w-full h-full relative scroll-smooth">
+
+                <!-- FLoat Nav -->
+                <div class="w-full h-fit fixed left-[16em] flex justify-center">
+                    <nav class="list-none h-fit flex bg-[rgba(255,255,255,0.1)] px-4 py-3 rounded-3xl text-[rgba(255,255,255,0.8)]">
+                        <li id="navExp" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-24 h-10 grid place-content-center rounded-xl current-section"><a href="#exp-section">Experience</a></li>
+                        <li id="navEdu" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-24 h-10 grid place-content-center rounded-xl"><a href="#edu-section">Education</a></li>
+                        <li id="navPorto" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-24 h-10 grid place-content-center rounded-xl"><a href="#porto-section">Portfolio</a></li>
+                    </nav>
+                </div>
+
+                <!-- Section Experience -->
+                <div id="exp-section" class="bg-[rgba(255,255,255,0.1)] w-full h-full rounded-3xl mt-24">
+
+                </div>
+                <div id="edu-section" class="bg-[rgba(255,255,255,0.1)] w-full h-full rounded-3xl mt-24">
+
+                </div>
+                <div id="porto-section" class="bg-[rgba(255,255,255,0.1)] w-full h-full rounded-3xl mt-24">
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- Content Break -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
