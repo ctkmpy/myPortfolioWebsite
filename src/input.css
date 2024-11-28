@@ -12,7 +12,8 @@
 
   .grid-template-content {
     display: grid;
-    grid-template-columns: 32em 1fr;
+    grid-template-columns: 32em 3em 1fr;
+    gap: 1em;
   }
   .grid-template-profile {
     display: grid;
@@ -21,6 +22,18 @@
   .grid-template-contacts {
     display: grid;
     grid-template-columns: 2.5em 1fr;
+  }
+  .grid-template-middle {
+    display: grid;
+    grid-template-rows: 20em 1fr;
+  }
+  .grid-template-edu {
+    display: grid;
+    grid-template-columns: 1fr 6em;
+  }
+  .grid-template-edu-date {
+    display: grid;
+    grid-template-rows: 1.5em 1fr 1.5em;
   }
   
   #gradient-container-rgb {
@@ -59,6 +72,9 @@
     }
   }
 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   #main-content-container::-webkit-scrollbar {
     scrollbar-width: none;
     -ms-overflow-style: none; 
