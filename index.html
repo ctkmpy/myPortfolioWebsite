@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Ahmad Saifudin Syuhri</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -102,13 +102,13 @@
         <!-- Nav Bar -->
         <div class="h-screen w-full py-4">
             <div class="h-full grid-template-middle gap-y-10">
-                <nav class="list-none h-fit w-fit flex flex-row bg-[rgba(255,255,255,0.2)] px-2 py-2 rounded-3xl text-[rgba(255,255,255,0.8)] [writing-mode:vertical-rl] [scale:-1] relative">
-                    <li id="navPorto" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-8 h-28 grid place-content-center rounded-3xl"><a href="#porto-section">Portofolio</a></li>
-                    <li id="navEdu" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-8 h-28 grid place-content-center rounded-3xl"><a href="#edu-section">Pendidikan</a></li>
-                    <li id="navExp" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-8 h-28 grid place-content-center rounded-3xl current-section"><a href="#exp-section">Pengalaman</a></li>
+                <nav class="list-none h-fit w-fit flex flex-row bg-[rgba(255,255,255,0.2)] px-2 py-2 rounded-3xl text-[rgba(255,255,255,0.8)] [writing-mode:vertical-rl] relative">
+                    <li id="navExp" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-12 h-12 grid place-content-center rounded-3xl current-section"><a href="#exp-header"><img class="invert w-6 h-6" src="img/experience.png" alt=""></a></li>
+                    <li id="navEdu" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-12 h-12 grid place-content-center rounded-3xl"><a href="#edu-header"><img class="invert w-6 h-6" src="img/graduation.png" alt=""></a></li>
+                    <li id="navPorto" class="navs transition duration-500 hover:text-[rgba(255,255,255,1)] w-12 h-12 grid place-content-center rounded-3xl"><a href="#porto-header"><img class="invert w-6 h-6" src="img/portfolio.png" alt=""></a></li>
                 </nav>
-                <div class="bg-[rgba(255,255,255,0.2)] px-2 rounded-3xl h-full relative">
-                    <div id="scroll-slider" class="w-8 h-8 rounded-[50%] bg-[rgba(255,255,255,0.2)] absolute top-2"></div>
+                <div class="bg-[rgba(255,255,255,0.2)] px-2 rounded-full h-full relative scale-75">
+                    <div id="scroll-slider" class="w-12 h-12 rounded-[50%] bg-[rgba(255,255,255,0.2)] absolute top-2"></div>
                 </div>
             </div>
            
@@ -118,10 +118,11 @@
         <div class="text-white py-5 overflow-hidden w-full h-full">
             <div id="main-content-container" class="overflow-scroll w-full h-full relative scroll-smooth">
 
-                <!-- Section Experience -->
-                <div class="bg-[rgba(255,255,255,0.1)] w-full rounded-3xl pt-5 flex flex-col gap-8">
-                    <h1 class="text-center text-3xl">PENGALAMAN</h1>
-                    <div id="exp-section" class="bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl p-5 flex flex-col gap-4">
+                <!-- Experience Section -->
+                <div id="exp-header" class="section-headers transition duration-1000 bg-[rgba(255,255,255,0.1)] current-section w-full h-fit rounded-3xl mb-2 py-4">
+                    <h1 class="text-center text-3xl">P E N G A L A M A N</h1>
+                </div>
+                    <div id="exp-section" class="transition duration-500 bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl p-5 flex flex-col gap-4 mb-8">
 
                         <!-- Exp 1 -->
                         <div class="bg-[rgba(255,255,255,0.1)] w-fit h-fit p-5 rounded-3xl flex flex-col">
@@ -164,62 +165,100 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div id="edu-section" class="bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl my-10 p-5">
-                    <div class="flex flex-col gap-4">
-                        
-                        <!-- Univ -->
-                        <div class="bg-[rgba(255,255,255,0.1)] w-96 p-5 rounded-3xl grid-template-edu gap-4 duration-1000">
-                            <div class="flex flex-col">
-                                <div class="hoverable-edu cursor-pointer bg-[rgba(255,255,255,0.1)] w-fit rounded-3xl p-5 duration-1000">
-                                    <h1 class="text-xl">Teknik Informatika</h1>
-                                    <h2 class="text-[rgba(255,255,255,0.7)]">Universitas Pelita Bangsa</h2>
-                                </div> 
-    
-                                <!-- Default Class: h-full, p-5 -->
-                                <div class="bg-[rgba(255,255,255,0.1)] w-fit rounded-b-3xl rounded-r-3xl gap-2 p-5 hidden">
-                                    <p class="text-[rgba(255,255,255,0.6)]">Mempelajari lebih dalam tentang jaringan komputer, algoritma pemrograman, pemrograman perangkat lunak seperti (Web, Mobile, dan Desktop) </p>
-                                </div>
-                            </div>
-
-                                <div class="grid-template-edu-date h-full bg-[rgba(255,255,255,0.1)] justify-center rounded-3xl p-2 gap-2 text-sm text-center">
-                                    <p class="text-[rgba(255,255,255,0.6)] content-start">April 2023</p>
-                                    <div class="bg-[rgba(255,255,255,0.6)] w-px justify-self-center"></div>
-                                    <p class="text-[rgba(255,255,255,0.6)] content-end">Sekarang</p>
-                                </div>
-                        </div>
-
-                        <!-- Highschool -->
-                        <div class="bg-[rgba(255,255,255,0.1)] w-[29.5em] p-5 rounded-3xl grid-template-edu gap-4 duration-1000">
-                            <div class="flex flex-col">
-                                <div class="hoverable-edu cursor-pointer bg-[rgba(255,255,255,0.1)] w-fit rounded-3xl p-5 duration-1000">
-                                    <h1 class="text-xl">Teknik Komputer dan Jaringan</h1>
-                                    <h2 class="text-[rgba(255,255,255,0.7)]">SMK Negeri 1 Cikarang Utara</h2>
-                                </div> 
-    
-                                <!-- Default Class: h-full, p-5 -->
-                                <div class="bg-[rgba(255,255,255,0.1)] w-fit rounded-b-3xl rounded-r-3xl gap-2 p-5 hidden">
-                                    <p class="text-[rgba(255,255,255,0.6)]">Mempelajari basic komputer, jaringan, 
-                                        pemrograman, design, dan troubleshooting</p>
-                                </div>
-                            </div>
-
-                                <div class="grid-template-edu-date h-full bg-[rgba(255,255,255,0.1)] justify-center rounded-3xl p-2 gap-2 text-sm text-center">
-                                    <p class="text-[rgba(255,255,255,0.6)] content-start">Jun 2018</p>
-                                    <div class="bg-[rgba(255,255,255,0.6)] w-px justify-self-center"></div>
-                                    <p class="text-[rgba(255,255,255,0.6)] content-end">Jun 2021</p>
-                                </div>
-                        </div>
-
-                    </div>
-                    
-                </div>
                 
-                <div id="porto-section" class="bg-[rgba(255,255,255,0.1)] w-full h-full rounded-3xl">
-                    
+                <!-- Edu Section -->
+                <div id="edu-header" class="section-headers transition duration-1000 bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl mb-2 py-4">
+                    <h1 class="text-[rgba(255,255,255,0.6)] text-center text-3xl">P E N D I D I K A N</h1>
                 </div>
+                    <div id="edu-section" class="opacity-50 transition duration-500 bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl mb-10 p-5">
+                        <div class="flex flex-col gap-4">
+                            
+                            <!-- Univ -->
+                            <div class="bg-[rgba(255,255,255,0.1)] w-96 p-5 rounded-3xl grid-template-edu gap-4 duration-1000">
+                                <div class="flex flex-col">
+                                    <div class="hoverable-edu cursor-pointer bg-[rgba(255,255,255,0.1)] w-fit rounded-3xl p-5 duration-1000">
+                                        <h1 class="text-xl">Teknik Informatika</h1>
+                                        <h2 class="text-[rgba(255,255,255,0.7)]">Universitas Pelita Bangsa</h2>
+                                    </div> 
+        
+                                    <!-- Default Class: h-full, p-5 -->
+                                    <div class="bg-[rgba(255,255,255,0.1)] w-fit rounded-b-3xl rounded-r-3xl gap-2 p-5 hidden">
+                                        <p class="text-[rgba(255,255,255,0.6)]">Mempelajari lebih dalam tentang jaringan komputer, algoritma pemrograman, pemrograman perangkat lunak seperti (Web, Mobile, dan Desktop) </p>
+                                    </div>
+                                </div>
+
+                                    <div class="grid-template-edu-date h-full bg-[rgba(255,255,255,0.1)] justify-center rounded-3xl p-2 gap-2 text-sm text-center">
+                                        <p class="text-[rgba(255,255,255,0.6)] content-start">April 2023</p>
+                                        <div class="bg-[rgba(255,255,255,0.6)] w-px justify-self-center"></div>
+                                        <p class="text-[rgba(255,255,255,0.6)] content-end">Sekarang</p>
+                                    </div>
+                            </div>
+
+                            <!-- Highschool -->
+                            <div class="bg-[rgba(255,255,255,0.1)] w-[29.5em] p-5 rounded-3xl grid-template-edu gap-4 duration-1000">
+                                <div class="flex flex-col">
+                                    <div class="hoverable-edu cursor-pointer bg-[rgba(255,255,255,0.1)] w-fit rounded-3xl p-5 duration-1000">
+                                        <h1 class="text-xl">Teknik Komputer dan Jaringan</h1>
+                                        <h2 class="text-[rgba(255,255,255,0.7)]">SMK Negeri 1 Cikarang Utara</h2>
+                                    </div> 
+        
+                                    <!-- Default Class: h-full, p-5 -->
+                                    <div class="bg-[rgba(255,255,255,0.1)] w-fit rounded-b-3xl rounded-r-3xl gap-2 p-5 hidden">
+                                        <p class="text-[rgba(255,255,255,0.6)]">Mempelajari basic komputer, jaringan, 
+                                            pemrograman, design, dan troubleshooting</p>
+                                    </div>
+                                </div>
+
+                                    <div class="grid-template-edu-date h-full bg-[rgba(255,255,255,0.1)] justify-center rounded-3xl p-2 gap-2 text-sm text-center">
+                                        <p class="text-[rgba(255,255,255,0.6)] content-start">Jun 2018</p>
+                                        <div class="bg-[rgba(255,255,255,0.6)] w-px justify-self-center"></div>
+                                        <p class="text-[rgba(255,255,255,0.6)] content-end">Jun 2021</p>
+                                    </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                
+                <!-- Porto Section -->
+                <div id="porto-header" class="section-headers transition duration-1000 bg-[rgba(255,255,255,0.1)] w-full h-fit rounded-3xl mb-2 py-4">
+                    <h1 class="text-[rgba(255,255,255,0.6)] text-center text-3xl">P O R T O F O L I O</h1>
+                </div>
+                    <div id="porto-section" class="opacity-50 transition duration-500 bg-[rgba(255,255,255,0.1)] w-full rounded-3xl p-5">
+
+                        <!-- Kuli App -->
+                        <div class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl flex flex-col gap-2">
+                            <div class="flex gap-4 flex-col">
+                                <div class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl w-fit h-fit flex flex-col gap-2 flex-2">
+                                    <div class="w-fit flex flex-col gap-2">
+                                        <div class="flex gap-2">
+                                            <h2 class="flex-1 text-xl bg-[rgba(255,255,255,0.2)] py-3 px-4 rounded-3xl align-middle">KuliApp</h2>
+                                            <a class="flex-2 bg-[rgba(255,255,255,0.2)] p-4 rounded-[50%] w-fit h-fit grid place-content-center transition duration-500 hover:bg-[rgba(255,255,255,0.3)]" href="https://Kuliapp.kesug.com" target="_blank"><img class="invert w-5 h-5" src="img/link.png" alt=""></a>
+                                        </div>
+                                        <div class="flex gap-2 text-[rgba(255,255,255,0.7)]">
+                                            <p class="w-fit bg-[rgba(255,255,255,0.1)] p-3 rounded-3xl">HTML</p>
+                                            <p class="w-fit bg-[rgba(255,255,255,0.1)] p-3 rounded-3xl">CSS</p>
+                                            <p class="w-fit bg-[rgba(255,255,255,0.1)] p-3 rounded-3xl">Javascript</p>
+                                            <p class="w-fit bg-[rgba(255,255,255,0.1)] p-3 rounded-3xl">PHP</p>
+                                            <p class="w-fit bg-[rgba(255,255,255,0.1)] p-3 rounded-3xl">MySQL</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-[rgba(255,255,255,0.7)] m-2">Aplikasi Web yang berfungsi untuk mencatat dan menghitung jam lembur karyawan. dengan menggunakan teknologi HTML, CSS native dan Javascript untuk frontend serta PHP native dan MySQL sebagai backend. Menggunakan library ChartJS dan juga mengaplikasikan AJAX pada pagination yang berada pada bagian dashboard.</p>
+                                </div>
+                                <div class="w-fit overflow-x-hidden grid gap-4">
+                                    <div class="screenshoot-container w-fit flex gap-4 overflow-scroll scroll-smooth">
+                                        <img class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl w-[45em] h-auto" src="img/screenshot/kuliapp/check-page.png" alt="">
+                                        <img class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl w-[45em] h-auto" src="img/screenshot/kuliapp/dashboard-page.png" alt="">
+                                        <img class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl w-[45em] h-auto" src="img/screenshot/kuliapp/calculator-page.png" alt="">
+                                        <img class="bg-[rgba(255,255,255,0.1)] p-5 rounded-3xl w-[45em] h-auto" src="img/screenshot/kuliapp/setting-page.png" alt="">
+                                    </div>
+                                    <div class="w-full flex gap-4">
+                                        <button class="btn-ss-left bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] transition duration-500 p-4 rounded-[50%]" type="button"><img class="w-6 h-auto invert" src="img/left-arrow.png" alt=""></button>
+                                        <button class="btn-ss-right bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.2)] transition duration-500 p-4 rounded-[50%]" type="button"><img class="w-6 h-auto invert" src="img/right-arrow.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
             </div>
             
         </div>
