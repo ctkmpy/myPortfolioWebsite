@@ -17,7 +17,7 @@
             <div class="absolute bottom-0-0 right-0-0 w-64 h-64 bg-blue-800 rounded-bl-[64%] rounded-br-[38%] rounded-tr-[86%] rounded-tl-[24%] -skew-x-12 -skew-y-12"></div>
         </div>
         <div id="gradient-container-gray" class="absolute w-fit h-fit p-[6em] scale-[3]">
-            <div class="absolute top-0 left-0 w-64 h-64 bg-green-800 rounded-bl-[66%] rounded-br-[48%] rounded-tr-[84%] rounded-tl-[34%] -skew-x-6 -skew-y-6"></div>
+            <div class="absolute top-0 left-0 w-64 h-64 bg-green-800 rounded-bl-[66%] rounded-br-[48%] rounded-tr-[84%] rounded-tl-[34%] -skew-x-6 -skew-y-6"></div> 
             <div class="absolute bottom-0-0 right-0-0 w-64 h-64 bg-gray-800 rounded-bl-[64%] rounded-br-[38%] rounded-tr-[86%] rounded-tl-[24%] -skew-x-12 -skew-y-12"></div>
         </div>
     </div>
@@ -26,58 +26,58 @@
 
 
     <!-- Content Begin -->
-    <div id="content" class="absolute w-full h-full top-0 left-0 grid-template-content">
+    <div id="content" class="absolute w-full h-full top-0 left-0 grid-template-content lg:grid-template-content-lg xl:grid-template-content-xl">
 
         <!-- Aside -->
-        <div class="text-white bg-[rgba(0,0,0,0.6)] relative p-5 rounded-3xl">
+        <div class="text-white bg-[rgba(0,0,0,0.6)] relative p-2 lg:p-3 xl:p-5 rounded-3xl">
 
-            <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl h-full w-full relative">
+            <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl h-full w-full relative px-0 pb-28 place-items-center">
 
                 <!-- Pict, Name, and Roles -->
-                <div class="w-full h-fit p-5 gap-x-6 grid-template-profile">
+                <div class="w-fit h-fit p-3 grid place-items-center gap-y-6 sm:gap-x-6 lg:gap-x-4 xl:gap-x-6 sm:grid-template-profile-sm">
                     <!-- My Pict -->
                     <div class="bg-[rgba(255,255,255,0.1)] shadow-2xl w-36 h-36 rounded-[50%] overflow-hidden">
                         <img class="-translate-y-8" src="img/me.png" alt="profile-image">
                     </div>
 
                     <!-- My Name & Contacts -->
-                    <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 flex flex-col gap-2">
+                    <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 flex flex-col gap-2 w-fit h-full text-center sm:text-start">
                         <!-- Name -->
-                        <h1 class="font-bold text-xl">Ahmad Saifudin Syuhri</h1>
+                        <h1 class="font-bold text-xl lg:text-lg xl:text-xl">Ahmad Saifudin Syuhri</h1>
                         <!-- Roles -->
-                        <p class="text-[rgba(255,255,255,0.6)]">Material Handler, Software 
+                        <p class="text-[rgba(255,255,255,0.6)] max-w-full lg:max-w-full xl:max-w-full text-lg lg:text-sm xl:text-lg">Material Handler, Software 
                             Developer, Network Engineer</p>
                     </div>
                 </div>
 
                 <!-- Summary -->
-                <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 m-5">
+                <div class="bg-[rgba(255,255,255,0.1)] rounded-3xl p-5 m-3 sm:m-5">
                     <!-- Roles -->
                     <p class="text-[rgba(255,255,255,0.8)]">Pengalaman selama 3 tahun di bidang manufaktur otomotif, yang berfokus pada material handling. Saya berkontribusi pada ketersediaan raw material yang akan diproses. Perhatian terhadap manajemen waktu dan detail menjadi kunci dalam mencapai pengiriman material yang tepat waktu dan akurat.</p>
                 </div>
 
                 <!-- My Contacts -->
-                <div class="bg-[rgba(255,255,255,0.1)] w-100 h-fit m-5 p-5 rounded-3xl grid gap-4">
+                <div class="bg-[rgba(255,255,255,0.1)] w-fit h-fit m-5 p-3 sm:p-5 rounded-3xl grid gap-2 place-content-center">
                     <!-- Email -->
-                    <div class="grid-template-contacts w-full h-fit gap-6">
-                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                    <div class="grid-template-contacts sm:grid-template-contacts-sm w-full h-fit gap-0 sm:gap-6">
+                        <h1 class="bg-transparent sm:bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
                             <img class="invert w-6" src="img/email.png" alt="">
                         </h1>
-                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">ahmadsaepudin032@gmail.com</p>
+                        <p class="bg-[rgba(255,255,255,0.2)] pl-10 pr-2 sm:px-5 w-fit h-10 grid place-items-center rounded-3xl">ahmadsaepudin032@gmail.com</p>
                     </div>
                     <!-- Phone -->
-                    <div class="grid-template-contacts w-full h-fit gap-6">
-                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                    <div class="grid-template-contacts sm:grid-template-contacts-sm w-full h-fit gap-0 sm:gap-6">
+                        <h1 class="bg-transparent sm:bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
                             <img class="invert w-6" src="img/smartphone-call.png" alt="">
                         </h1>
-                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">0851-5636-9119</p>
+                        <p class="bg-[rgba(255,255,255,0.2)] pl-10 pr-2 sm:px-5 w-fit h-10 grid place-items-center rounded-3xl">0851-5636-9119</p>
                     </div>
                     <!-- Location -->
-                    <div class="grid-template-contacts w-full h-fit gap-6">
-                        <h1 class="bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
+                    <div class="grid-template-contacts sm:grid-template-contacts-sm w-full h-fit gap-0 sm:gap-6">
+                        <h1 class="bg-transparent sm:bg-[rgba(255,255,255,0.2)] w-10 h-10 grid place-items-center rounded-3xl">
                             <img class="invert w-6" src="img/location-pin.png" alt="">
                         </h1>
-                        <p class="bg-[rgba(255,255,255,0.2)] px-5 w-fit h-10 grid place-items-center rounded-3xl">Bekasi, Indonesia</p>
+                        <p class="bg-[rgba(255,255,255,0.2)] pl-10 pr-2 sm:px-5 w-fit h-10 grid place-items-center rounded-3xl">Bekasi, Indonesia</p>
                     </div>
                 </div>
 
@@ -113,6 +113,8 @@
             </div>
            
         </div>
+
+        
 
         <!-- Main Content -->
         <div class="text-white py-5 overflow-hidden w-full h-full">

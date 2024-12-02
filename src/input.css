@@ -10,19 +10,41 @@
     color: rgba(255,255,255,1);
   }
   
-  .grid-template-content {
+  /* Body Container */
+  .grid-template-content-xl {
     display: grid;
     grid-template-columns: 32em 4em 1fr;
     gap: 1em;
   }
-  .grid-template-profile {
+  .grid-template-content-lg {
+    display: grid;
+    grid-template-columns: 28em 4em 1fr;
+    gap: 1em;
+  }
+  .grid-template-content {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  /* Profile */
+  .grid-template-profile-sm {
     display: grid;
     grid-template-columns: 9em 1fr;
   }
-  .grid-template-contacts {
+
+  /* Contact */
+  .grid-template-contacts-sm {
     display: grid;
     grid-template-columns: 2.5em 1fr;
   }
+  .grid-template-contacts {
+    display: grid;
+    grid-template-columns: 0em 1fr;
+  }
+
+
   .grid-template-middle {
     display: grid;
     grid-template-rows: 8.5em 1fr;
