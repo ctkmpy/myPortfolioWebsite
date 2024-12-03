@@ -24,7 +24,7 @@
   .grid-template-content {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto-fit);
     gap: 1em;
   }
 
@@ -44,15 +44,25 @@
     grid-template-columns: 0em 1fr;
   }
 
-
-  .grid-template-middle {
+/* Navbar */
+  .grid-template-middle-lg {
     display: grid;
     grid-template-rows: 8.5em 1fr;
   }
-  .grid-template-edu {
+  .grid-template-middle {
+    display: grid;
+  }
+
+  .grid-template-edu-sm {
     display: grid;
     grid-template-columns: 1fr 6em;
   }
+  .grid-template-edu {
+    display: grid;
+    grid-template-rows: repeat(2, auto-fit);
+  }
+
+  /* Edu Date */
   .grid-template-edu-date {
     display: grid;
     grid-template-rows: 1.5em 1fr 1.5em;

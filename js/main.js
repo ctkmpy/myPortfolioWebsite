@@ -1,6 +1,8 @@
 const nav = document.querySelector('nav');
 const navs = document.querySelectorAll('.navs');
+const content = document.querySelector('#content');
 const contentCont = document.querySelector('#main-content-container');
+const aside = document.querySelector('#aside');
 
 const sectionHeaders = document.querySelectorAll('.section-headers');
 const expSection = document.querySelector('#exp-section');
@@ -106,3 +108,17 @@ btnSsLeft.forEach(e => {
         ssCont.scrollLeft -= ssWidth.scrollWidth / 2;
     })
 });
+
+let lasestScrollPoint = 500;
+window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
+    if(window.scrollY > lasestScrollPoint) {
+        window.scrollTo({
+            top: aside.scrollHeight,
+            left: 0,
+            behavior: "smooth",
+        })
+    }
+    lasestScrollPoint = window.scrollY <= 500 ? 500 : window.scrollY;
+    console.log(lasestScrollPoint)
+})
